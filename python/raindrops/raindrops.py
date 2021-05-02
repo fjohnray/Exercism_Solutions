@@ -10,7 +10,6 @@ def convert(number):
 
     if type(number) != str:
         drop_sound = [value for key, value in sounds.items() if number % key == 0]
-        wife = "".join(drop_sound) if drop_sound else str(number)
-        return wife
+        return "".join(drop_sound) if drop_sound else str(number)
     else:
         return "The passed argument was not a number."
